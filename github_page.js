@@ -16,7 +16,6 @@ $(function () {
             var template = ich[page_styles[hash]];
             $('.nav li').removeClass('active');
             if (template) {
-                console.log(response);
                 $('#page_content').html(template(response));
                 $('.' + hash.replace('#', '')).addClass('active');
             } else {
